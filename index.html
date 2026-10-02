@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>寻找云海学姐 · Find-Yunhai</title>
+<style>
+  :root {
+    --bg: #0e0f1c;
+    --bg2: #16172b;
+    --card: #1c1e36;
+    --accent: #7c5cff;
+    --accent2: #21d4c4;
+    --text: #e8e9f3;
+    --muted: #9aa0c0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+    background: radial-gradient(1200px 600px at 70% -10%, #23254a 0%, var(--bg) 55%);
+    color: var(--text);
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 48px 20px 64px; }
+  header.hero {
+    text-align: center;
+    padding: 40px 0 28px;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: var(--accent2);
+    border: 1px solid rgba(33,212,196,0.4);
+    border-radius: 999px;
+    padding: 4px 14px;
+    margin-bottom: 18px;
+  }
+  h1 {
+    font-size: 44px;
+    line-height: 1.2;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 10px;
+  }
+  .subtitle { color: var(--muted); font-size: 16px; }
+  section {
+    background: var(--card);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 16px;
+    padding: 26px 28px;
+    margin: 22px 0;
+  }
+  h2 { font-size: 22px; margin-bottom: 12px; color: #fff; }
+  h2 .num { color: var(--accent); margin-right: 8px; }
+  p { color: var(--text); margin: 8px 0; }
+  .muted { color: var(--muted); }
+  ul { margin: 10px 0 4px 20px; }
+  li { margin: 6px 0; }
+  .downloads { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 16px; }
+  .btn {
+    flex: 1 1 220px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 16px 18px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .btn.primary { background: linear-gradient(90deg, var(--accent), #9b7bff); box-shadow: 0 8px 24px rgba(124,92,255,.35); }
+  .btn.ghost { background: rgba(33,212,196,.12); border: 1px solid rgba(33,212,196,.5); color: var(--accent2); }
+  .btn:hover { transform: translateY(-2px); }
+  .btn small { display: block; font-weight: 400; font-size: 12px; opacity: .85; margin-top: 4px; }
+  .note {
+    margin-top: 14px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(124,92,255,.08);
+    border-left: 3px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 8px;
+  }
+  .shot {
+    margin-top: 14px;
+    height: 200px;
+    border: 1px dashed rgba(255,255,255,.18);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid rgba(255,255,255,.08); font-size: 15px; }
+  th { color: var(--muted); font-weight: 500; }
+  code { background: rgba(255,255,255,.08); padding: 2px 6px; border-radius: 6px; font-size: 13px; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 30px; }
+  footer a { color: var(--accent2); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <span class="badge">WINDOWS · 迷宫冒险</span>
+    <h1>寻找云海学姐</h1>
+    <div class="subtitle">Find-Yunhai · 在迷宫中寻找学姐，收集原石，躲开教官</div>
+  </header>
+
+  <section>
+    <h2><span class="num">01</span>关于游戏</h2>
+    <p>《寻找云海学姐》是一款以校园为背景的迷宫冒险小游戏。你将在错综复杂的迷宫里寻找「云海学姐」，沿途收集散落的原石，并时刻警惕教官的追捕。</p>
+    <p class="muted">本游戏为 Windows 桌面程序，请在下方下载后在电脑上运行（无法在网页内直接游玩）。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>游戏玩法</h2>
+    <ul>
+      <li><b>移动探索</b>：在迷宫中自由行走，摸索通往出口的路径。</li>
+      <li><b>收集原石</b>：迷宫里分布着若干原石，全部收集齐才能解锁出口。</li>
+      <li><b>躲避教官</b>：教官会在迷宫中追逐玩家，被抓到则本关失败。</li>
+      <li><b>通关进阶</b>：集齐原石后从出口进入下一关，继续寻找云海学姐。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>下载与运行</h2>
+    <div class="downloads">
+      <a class="btn primary" href="https://github.com/EriccJi/Find-Yunhai/raw/main/%E8%BF%B7%E5%AE%AB.exe">
+        下载游戏（迷宫.exe）<small>约 180 KB · Windows x64</small>
+      </a>
+      <a class="btn ghost" href="https://github.com/EriccJi/Find-Yunhai/raw/main/bgm.wav">
+        下载背景音乐（bgm.wav）<small>约 44 MB</small>
+      </a>
+    </div>
+    <div class="note">
+      ⚠️ 请将 <code>迷宫.exe</code> 与 <code>bgm.wav</code> 放在<b>同一个文件夹</b>下，再双击 <code>迷宫.exe</code> 运行，背景音乐才会生效。
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>截图 / 演示</h2>
+    <div class="shot">游戏截图待补充（把截图放进仓库后在此替换）</div>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>文件说明</h2>
+    <table>
+      <tr><th>文件</th><th>说明</th></tr>
+      <tr><td><code>迷宫.exe</code></td><td>游戏主程序</td></tr>
+      <tr><td><code>bgm.wav</code></td><td>背景音乐（需与 exe 同目录）</td></tr>
+      <tr><td><code>迷宫.pdb</code></td><td>调试符号文件（运行不需要，仅供排错）</td></tr>
+    </table>
+  </section>
+
+  <footer>
+    源码与资源：<a href="https://github.com/EriccJi/Find-Yunhai">github.com/EriccJi/Find-Yunhai</a><br/>
+    由 WorkBuddy 协助搭建 · GitHub Pages
+  </footer>
+</div>
+</body>
+</html>
